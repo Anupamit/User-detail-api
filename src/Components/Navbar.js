@@ -1,13 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import './Navbar.css'
+import '../Styles/Navbar.css'
+
 
 function Navbar() {
+    let [backName, setBackname]=useState(true)
     return (
         <div className='combinenav'>
-            <div className='logo'>Advertyzement</div>
+            <div className='logo'>User Details</div>
             <nav className='item'>
-                <ul className='ul'>
+                <ul>
                     <li>
                         <Link to='/'></Link>
                     </li>
@@ -24,7 +26,7 @@ function Navbar() {
                         <Link to='/'></Link>
                     </li>
                     <li>
-                        <Link to='/getdata'>Get Data</Link>
+                        <Link to={`${backName?'/getdata':"/"}`} onClick={()=>setBackname(!backName)}>{backName?"Get Data":"Back Home"}</Link>
                     </li>
                 </ul>
             </nav>

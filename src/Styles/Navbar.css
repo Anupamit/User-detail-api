@@ -3,7 +3,6 @@
 *{
     margin: 0;
     padding: 0;
-    width: 100%;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -11,7 +10,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #182334;
+    background-color: #132541;
 }
 .logo{
     margin-left: 1rem;
@@ -19,10 +18,10 @@
     font-size: 20px;
     font-weight: bolder;
 }
-.item{
+/* .item{
     display: flex;
-}
-.ul{
+} */
+ul{
     display: flex;
     margin: 25px;
 }
